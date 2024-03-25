@@ -6,7 +6,7 @@ import recipes from  './routes/recipe.routes.js';
 import mongoose from "mongoose";
 
 // load env variables
-dotenv.config();
+dotenv.config({path:[".env.local"]});
 
 const app = express();
 
